@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Love for Sara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('hi.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #000000;
+    }
+    h1 {
+      text-align: center;
+      font-size: 6em;
+      color: #8B00FF; /* Purple */
+      text-shadow: 2px 2px 4px #000000;
+      font-family: 'Explora', cursive;
+    }
+    p {
+      text-align: center;
+      font-size: 2.5em;
+      color: #FFD700; /* golden */
+      text-shadow: 1px 1px 2px #000000;
+      font-family: cursive;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 1.5em;
+      background-color: #8B00FF; /* Purple */
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+   }
+  </style>
+<body>
+  <h1 id="message"></h1>
+  <p id="message2"></p>
+  <script>
+    // The message to be displayed
+    var message = "I've never felt this way before, but I know that with you, my heart beats with a love that will last forever.";
+    var message2 = "Will you be mine forever, Sara Lamis ?";
+    // The element to display the message
+    var messageElement = document.getElementById("message");
+    var messageElement2 = document.getElementById("message2");
+    // The time (in milliseconds) between displaying each letter
+    var delay = 100;
+    // The index of the next letter to be displayed
+    var i = 0;
+    var j = 0;
+    // Display the message letter by letter
+    function displayMessage() {
+      messageElement.innerHTML += message.charAt(i);
+      messageElement2.innerHTML += message2.charAt(j);
+      i++;
+      j++;
+      if (i < message.length) {
+        setTimeout(displayMessage, delay);
+      }
+    }
+    // Start displaying the message
+    displayMessage();
+  </script>
+  <a href="whatsapp://send?phone=+916374984965&text=Hello%2C%20I%20just%20visited%20your%20website%20and%20I%20am%20interested%20in%20knowing%20more%20about%20you.">
+    <button>Yes, I will</button>
+</body>
+</head>
+</html>
